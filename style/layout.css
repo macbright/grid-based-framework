@@ -1,141 +1,190 @@
-/* desktop view */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+@import url(/Users/sumaerjolly/Desktop/grid-based-framework/style/reset.css);
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+.col-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 8.33333%;
+          flex: 0 0 8.33333%;
 }
 
-body {
-  line-height: 1;
+.col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.66667%;
+          flex: 0 0 16.66667%;
 }
 
-ol,
-ul {
-  list-style: none;
+.col-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
 }
 
-blockquote,
-q {
-  quotes: none;
+.col-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+          flex: 0 0 33.33333%;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+.col-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.66667%;
+          flex: 0 0 41.66667%;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.col-7 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.33333%;
+          flex: 0 0 58.33333%;
 }
 
-h1 {
-  color: blue;
+.col-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.66667%;
+          flex: 0 0 66.66667%;
+}
+
+.col-9 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+
+.col-10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 83.33333%;
+          flex: 0 0 83.33333%;
+}
+
+.col-11 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 91.66667%;
+          flex: 0 0 91.66667%;
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hd {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  padding: 5px;
+}
+
+.sub-hd {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 5px;
+}
+
+.small-hd {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.btn-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#49708f), to(#293f50));
+  background: linear-gradient(#49708f, #293f50);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 16px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.img-res {
+  max-width: 100%;
+  height: auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.con-large {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.con-small {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.con-medium {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
+.gray-1 {
+  color: #696969;
+}
+
+.gray-2 {
+  color: #808080;
+}
+
+.gray-3 {
+  color: #A9A9A9;
+}
+
+.gray-4 {
+  color: #C0C0C0;
+}
+
+.gray-5 {
+  color: #DCDCDC;
 }
 /*# sourceMappingURL=layout.css.map */
