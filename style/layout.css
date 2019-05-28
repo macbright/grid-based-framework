@@ -1,4 +1,4 @@
-@import url(/Users/sumaerjolly/Desktop/grid-based-framework/style/reset.css);
+@import url(/Users/macbright/Desktop/grid-based-framework/style/reset.css);
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,5 +186,86 @@
 
 .gray-5 {
   color: #DCDCDC;
+}
+
+nav {
+  background-color: #303031;
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  display: inline-block;
+  width: 9%;
+  color: white;
+  list-style: none;
+  padding-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .logo {
+  font-size: 22px;
+}
+
+nav .buy {
+  width: 11%;
+}
+
+nav .search-box {
+  position: absolute;
+  -webkit-transform: translate(-10%, -10%);
+          transform: translate(-10%, -10%);
+  background-color: #303031;
+  height: 30px;
+  padding-top: 14px;
+}
+
+nav .search-btn {
+  color: white;
+  float: right;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .search-txt {
+  border: none;
+  background-color: none;
+  float: left;
+  outline: none;
+  padding: 0;
+  color: #303031;
+  font-size: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  line-height: 30px;
+  width: 0;
+}
+
+nav .search-box:hover > .search-txt {
+  width: 150px;
+  padding: 0 6px;
+}
+
+nav .search-box:hover > .search-btn {
+  background-color: white;
+  float: right;
+  display: none;
 }
 /*# sourceMappingURL=layout.css.map */
