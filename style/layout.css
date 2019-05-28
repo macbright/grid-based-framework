@@ -1,82 +1,84 @@
-@import url(/Users/macbright/Desktop/grid-based-framework/style/reset.css);
+@import url(/Users/sumaerjolly/Desktop/grid-based-framework/style/reset.css);
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .col-1 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 8.33333%;
-          flex: 0 0 8.33333%;
+      -ms-flex: 0 0 8.16667%;
+          flex: 0 0 8.16667%;
 }
 
 .col-2 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 16.66667%;
-          flex: 0 0 16.66667%;
+      -ms-flex: 0 0 16.33333%;
+          flex: 0 0 16.33333%;
 }
 
 .col-3 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+      -ms-flex: 0 0 24.5%;
+          flex: 0 0 24.5%;
 }
 
 .col-4 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33333%;
-          flex: 0 0 33.33333%;
+      -ms-flex: 0 0 32.66667%;
+          flex: 0 0 32.66667%;
 }
 
 .col-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 41.66667%;
-          flex: 0 0 41.66667%;
+      -ms-flex: 0 0 40.83333%;
+          flex: 0 0 40.83333%;
 }
 
 .col-6 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
 }
 
 .col-7 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 58.33333%;
-          flex: 0 0 58.33333%;
+      -ms-flex: 0 0 57.16667%;
+          flex: 0 0 57.16667%;
 }
 
 .col-8 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 66.66667%;
-          flex: 0 0 66.66667%;
+      -ms-flex: 0 0 65.33333%;
+          flex: 0 0 65.33333%;
 }
 
 .col-9 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 75%;
-          flex: 0 0 75%;
+      -ms-flex: 0 0 73.5%;
+          flex: 0 0 73.5%;
 }
 
 .col-10 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 83.33333%;
-          flex: 0 0 83.33333%;
+      -ms-flex: 0 0 81.66667%;
+          flex: 0 0 81.66667%;
 }
 
 .col-11 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 91.66667%;
-          flex: 0 0 91.66667%;
+      -ms-flex: 0 0 89.83333%;
+          flex: 0 0 89.83333%;
 }
 
 .col-12 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
+      -ms-flex: 0 0 98%;
+          flex: 0 0 98%;
 }
 
 .text-center {
@@ -94,21 +96,18 @@
 .hd {
   font-size: 2.2rem;
   font-weight: bold;
-  line-height: 1.2;
-  padding: 5px;
+  line-height: 1.3;
 }
 
 .sub-hd {
   font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1.2;
-  padding: 5px;
+  line-height: 1.3;
 }
 
 .small-hd {
   font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 5px;
+  line-height: 1.3;
 }
 
 .bold {
@@ -145,7 +144,7 @@
 }
 
 .con-large {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -424,9 +423,9 @@ nav .search-box:hover > .search-btn {
   border-radius: 5px;
   vertical-align: middle;
   position: absolute;
-  top: 9px;
+  top: 6px;
   margin-left: 8px;
-  right: -20%;
+  right: -25%;
 }
 
 .section-2 {
@@ -483,9 +482,9 @@ nav .search-box:hover > .search-btn {
   border-radius: 5px;
   vertical-align: middle;
   position: absolute;
-  top: 9px;
+  top: 6px;
   margin-left: 8px;
-  right: -20%;
+  right: -25%;
 }
 
 .section-3 {
@@ -534,5 +533,124 @@ nav .search-box:hover > .search-btn {
   color: #c92e2a;
   font-size: 18px;
   font-weight: bold;
+}
+
+.wwdc {
+  background: url(../resource/images/applemonkey.jpg) no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: bottom;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  margin: 15px 0;
+}
+
+.wwdc a {
+  text-decoration: none;
+  color: white;
+  padding-top: 15px;
+  display: block;
+}
+
+.music {
+  background: url(../resource/images/applemusic2x.jpg) no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: bottom;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  margin: 15px 0;
+}
+
+.music a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.tv {
+  background: url(../resource/images/appletv.jpg) no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: bottom;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 15px;
+}
+
+.tv a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.arcade {
+  background: url(../resource/images/applearcade.jpg) no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: bottom;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 15px;
+}
+
+.arcade a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.ipad {
+  background: #fafafa;
+  height: 500px;
+  color: black;
+  text-align: center;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.ipad a {
+  text-decoration: none;
+  color: #1d70c9;
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.ipad img {
+  width: 60%;
+  padding-top: 40px;
+}
+
+.macbook {
+  background: #fafafa;
+  height: 500px;
+  color: black;
+  text-align: center;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.macbook a {
+  text-decoration: none;
+  color: #1d70c9;
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.macbook img {
+  width: 80%;
+  padding-top: 90px;
 }
 /*# sourceMappingURL=layout.css.map */
