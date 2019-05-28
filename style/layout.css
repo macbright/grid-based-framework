@@ -1,4 +1,4 @@
-@import url(/Users/macbright/Desktop/grid-based-framework/style/reset.css);
+@import url(/Users/sumaerjolly/Desktop/grid-based-framework/style/reset.css);
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +188,26 @@
   color: #DCDCDC;
 }
 
+.border-btm {
+  border-bottom: #272727 solid 1px;
+  padding: 5px 0;
+}
+
+.border-top {
+  border-top: #808080 solid 1px;
+  padding: 5px 0;
+}
+
+.border-right {
+  border-right: #808080 solid 1px;
+  padding: 5px 0;
+}
+
+.border-left {
+  border-left: #808080 solid 1px;
+  padding: 5px 0;
+}
+
 nav {
   background-color: #303031;
   height: 50px;
@@ -267,5 +287,82 @@ nav .search-box:hover > .search-btn {
   background-color: white;
   float: right;
   display: none;
+}
+
+.small-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #303031;
+}
+
+.small-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.small-nav .small-nav-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.small-nav .small-logo {
+  position: absolute;
+  left: 50%;
+}
+
+.small-nav ul {
+  list-style: none;
+}
+
+.small-nav .nav-content {
+  position: absolute;
+  top: 80px;
+  overflow: hidden;
+  background-color: black;
+  height: 0;
+}
+
+.small-nav .nav-sub {
+  padding: 20px;
+}
+
+.small-nav .nav-sub ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.small-nav .nav-sub li {
+  margin: 0 40px;
+}
+
+.small-nav .nav-sub li:first-child {
+  margin: 0;
+}
+
+.small-nav .nav-item {
+  padding-left: 20px;
+}
+
+.small-nav .nav-item:focus ~ .nav-content {
+  height: 100vh;
+  width: 100%;
+}
+
+.small-nav .search-txt-2 {
+  width: 95%;
+  background-color: #303031;
+  color: white;
+  height: 35px;
+  border: none;
+}
+
+.small-nav button i {
+  vertical-align: top;
 }
 /*# sourceMappingURL=layout.css.map */

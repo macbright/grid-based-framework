@@ -127,6 +127,25 @@ $columns: 12;
     color: #DCDCDC;
 }
 
+// Borders are here
+
+.border-btm{
+    border-bottom: rgb(39, 39, 39) solid 1px;
+    padding: 5px 0;
+}
+.border-top{
+    border-top: #808080 solid 1px;
+    padding: 5px 0 ;
+}
+.border-right{
+    border-right: #808080 solid 1px;
+    padding: 5px 0 ;
+}
+.border-left{
+    border-left: #808080 solid 1px;
+    padding: 5px 0 ;
+}
+
 // Our site clone Scss starts here
 $nav-col: #303031;
 nav {
@@ -190,3 +209,86 @@ nav {
         display: none;
     }
 }
+
+.small-nav{
+    display: flex;
+    width: 100%;
+    background-color: $nav-col;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .small-nav-2{
+        display: flex;
+        width: 100%;
+    }
+    .small-logo{
+        position: absolute;
+        left: 50%;
+       
+
+
+    }
+    ul{
+        list-style: none;
+    }
+
+    .nav-content{
+        position: absolute;
+        top: 80px;
+        overflow: hidden;
+        background-color: black;
+        height: 0;
+
+    }
+
+    .nav-sub{
+        padding: 20px;
+
+        ul li a{
+            display: inline-block;
+            padding: 10px 0;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        li{
+            margin: 0 40px;
+            &:first-child{
+                margin: 0;
+            } 
+        }
+
+       
+    }
+
+    .nav-item{
+        &:focus ~ .nav-content{
+            height: 100vh;
+            width: 100%;
+            
+        }
+
+        padding-left: 20px;
+    }
+
+    .search-txt-2{
+        width: 95%;
+        background-color: $nav-col;
+        color: white;
+        height: 35px;
+        border: none;
+    }
+
+    button i{
+        vertical-align: top;
+    }
+
+
+
+
+    
+
+} 
