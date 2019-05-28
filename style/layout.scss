@@ -1,11 +1,9 @@
 @import 'reset.css';
 // Grid Framework Starts Here
-
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
 
 $columns: 12;
@@ -39,7 +37,6 @@ $columns: 12;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.3;
-   
 }
 
 .small-hd {
@@ -139,8 +136,7 @@ $columns: 12;
 }
 
 .border-right {
-    border-right: #808080 solid 1px;
-    padding: 5px 0;
+    border-right: 1px solid rgb(214, 214, 214);
 }
 
 .border-left {
@@ -397,8 +393,8 @@ nav {
 }
 
 // Section 4 starts here
-.wwdc{
-    background: url(../resource/images/applemonkey.jpg) no-repeat ;
+.wwdc {
+    background: url(../resource/images/applemonkey.jpg) no-repeat;
     background-size: cover;
     height: 500px;
     background-position: bottom;
@@ -406,19 +402,16 @@ nav {
     text-align: center;
     padding-top: 40px;
     margin: 15px 0;
-   
-
-    a{
+    a {
         text-decoration: none;
         color: white;
         padding-top: 15px;
         display: block;
-        
     }
 }
 
-.music{
-    background: url(../resource/images/applemusic2x.jpg) no-repeat ;
+.music {
+    background: url(../resource/images/applemusic2x.jpg) no-repeat;
     background-size: cover;
     height: 500px;
     background-position: bottom;
@@ -426,20 +419,17 @@ nav {
     text-align: center;
     padding-top: 40px;
     margin: 15px 0;
-
-    a{
+    a {
         text-decoration: none;
         color: white;
         display: inline-block;
         padding-top: 15px;
         padding-right: 10px;
-        
     }
-
 }
 
-.tv{
-    background: url(../resource/images/appletv.jpg) no-repeat ;
+.tv {
+    background: url(../resource/images/appletv.jpg) no-repeat;
     background-size: cover;
     height: 500px;
     background-position: bottom;
@@ -447,20 +437,17 @@ nav {
     text-align: center;
     padding-top: 40px;
     margin-bottom: 15px;
-
-    a{
+    a {
         text-decoration: none;
         color: white;
         display: inline-block;
         padding-top: 15px;
         padding-right: 10px;
-        
     }
-
 }
 
-.arcade{
-    background: url(../resource/images/applearcade.jpg) no-repeat ;
+.arcade {
+    background: url(../resource/images/applearcade.jpg) no-repeat;
     background-size: cover;
     height: 500px;
     background-position: bottom;
@@ -468,63 +455,106 @@ nav {
     text-align: center;
     padding-top: 40px;
     margin-bottom: 15px;
-
-    a{
+    a {
         text-decoration: none;
         color: white;
         display: inline-block;
         padding-top: 15px;
         padding-right: 10px;
-        
     }
-
 }
 
-.ipad{
+.ipad {
     background: rgb(250, 250, 250);
     height: 500px;
     color: black;
     text-align: center;
     padding-top: 40px;
     overflow: hidden;
-    // margin-bottom: 10px;
-
-    a{
+    a {
         text-decoration: none;
         color: rgb(29, 112, 201);
         display: inline-block;
         padding-top: 15px;
         padding-right: 10px;
-        
     }
-    img{
+    img {
         width: 60%;
         padding-top: 40px;
     }
-
 }
 
-.macbook{
+.macbook {
     background: rgb(250, 250, 250);
     height: 500px;
     color: black;
     text-align: center;
     padding-top: 40px;
     overflow: hidden;
-    // margin-bottom: 10px;
-
-    a{
+    a {
         text-decoration: none;
         color: rgb(29, 112, 201);
         display: inline-block;
         padding-top: 15px;
         padding-right: 10px;
-        
     }
-    img{
+    img {
         width: 80%;
         padding-top: 90px;
     }
-    
+}
 
+footer {
+    background-color: rgb(250, 250, 250);
+    margin-top: 20px;
+    .footer-links {
+        border-bottom: 1px solid rgb(214, 214, 214);
+        padding-bottom: 8px;
+    }
+    .pb {
+        margin-bottom: 25px;
+    }
+    .ls {
+        color: rgb(144, 144, 144);
+        font-size: 13px;
+        font-weight: normal;
+    }
+    .footer1 {
+        border-bottom: 1px solid rgb(214, 214, 214);
+        padding: 10px 10px 20px 0;
+        p {
+            color: rgb(144, 144, 144);
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: rgb(87, 87, 87);
+        padding-top: 15px;
+        font-size: 13px;
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    p {
+        padding-top: 25px;
+        color: rgb(51, 51, 51);
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .last-footer {
+        display: flex;
+        margin-top: 15px;
+        a {
+            color: rgb(87, 87, 87);
+            text-decoration: none;
+            padding: 15px;
+        }
+        span {
+            color: rgb(87, 87, 87);
+            padding: 15px;
+        }
+    }
 }

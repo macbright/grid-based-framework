@@ -1,4 +1,4 @@
-@import url(/Users/sumaerjolly/Desktop/grid-based-framework/style/reset.css);
+@import url(/Users/macbright/Desktop/grid-based-framework/style/reset.css);
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,8 +197,7 @@
 }
 
 .border-right {
-  border-right: #808080 solid 1px;
-  padding: 5px 0;
+  border-right: 1px solid #d6d6d6;
 }
 
 .border-left {
@@ -652,5 +651,73 @@ nav .search-box:hover > .search-btn {
 .macbook img {
   width: 80%;
   padding-top: 90px;
+}
+
+footer {
+  background-color: #fafafa;
+  margin-top: 20px;
+}
+
+footer .footer-links {
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 8px;
+}
+
+footer .pb {
+  margin-bottom: 25px;
+}
+
+footer .ls {
+  color: #909090;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+footer .footer1 {
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px 10px 20px 0;
+}
+
+footer .footer1 p {
+  color: #909090;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+footer a {
+  text-decoration: none;
+  color: #575757;
+  padding-top: 15px;
+  font-size: 13px;
+  display: block;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  padding-top: 25px;
+  color: #333333;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+footer .last-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+footer .last-footer a {
+  color: #575757;
+  text-decoration: none;
+  padding: 15px;
+}
+
+footer .last-footer span {
+  color: #575757;
+  padding: 15px;
 }
 /*# sourceMappingURL=layout.css.map */
