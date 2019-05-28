@@ -27,22 +27,21 @@ $columns: 12;
 
 // Headings are Here
 .hd {
-    font-size: 2.5rem;
-    font-weight: bolder;
+    font-size: 2.2rem;
+    font-weight: bold;
     line-height: 1.2;
     padding: 5px;
 }
 
 .sub-hd {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.2;
     padding: 5px;
 }
 
 .small-hd {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
     line-height: 1.2;
     padding: 5px;
 }
@@ -128,22 +127,30 @@ $columns: 12;
 }
 
 // Borders are here
-
-.border-btm{
+.border-btm {
     border-bottom: rgb(39, 39, 39) solid 1px;
     padding: 5px 0;
 }
-.border-top{
+
+.border-top {
     border-top: #808080 solid 1px;
-    padding: 5px 0 ;
+    padding: 5px 0;
 }
-.border-right{
+
+.border-right {
     border-right: #808080 solid 1px;
-    padding: 5px 0 ;
+    padding: 5px 0;
 }
-.border-left{
+
+.border-left {
     border-left: #808080 solid 1px;
-    padding: 5px 0 ;
+    padding: 5px 0;
+}
+
+.border-all {
+    border: #000 solid 1px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 // Our site clone Scss starts here
@@ -210,85 +217,180 @@ nav {
     }
 }
 
-.small-nav{
+.small-nav {
     display: flex;
     width: 100%;
     background-color: $nav-col;
-
-    a{
+    a {
         text-decoration: none;
         color: white;
     }
-
-    .small-nav-2{
+    .small-nav-2 {
         display: flex;
         width: 100%;
     }
-    .small-logo{
+    .small-logo {
         position: absolute;
         left: 50%;
-       
-
-
     }
-    ul{
+    ul {
         list-style: none;
     }
-
-    .nav-content{
+    .nav-content {
         position: absolute;
         top: 80px;
         overflow: hidden;
         background-color: black;
         height: 0;
-
     }
-
-    .nav-sub{
+    .nav-sub {
         padding: 20px;
-
-        ul li a{
+        ul li a {
             display: inline-block;
             padding: 10px 0;
             font-size: 20px;
             line-height: 1.5;
         }
-
-        li{
+        li {
             margin: 0 40px;
-            &:first-child{
+            &:first-child {
                 margin: 0;
-            } 
+            }
         }
-
-       
     }
-
-    .nav-item{
-        &:focus ~ .nav-content{
+    .nav-item {
+        &:focus~.nav-content {
             height: 100vh;
             width: 100%;
-            
         }
-
         padding-left: 20px;
     }
-
-    .search-txt-2{
+    .search-txt-2 {
         width: 95%;
         background-color: $nav-col;
         color: white;
         height: 35px;
         border: none;
     }
-
-    button i{
+    button i {
         vertical-align: top;
     }
+}
 
+.content {
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+    padding-top: 30px;
+    .content1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            padding-top: 15px;
+            text-decoration: none;
+            color: rgb(29, 112, 201);
+            font-size: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .content2 {
+        text-align: center;
+    }
+    img {
+        width: 65%;
+    }
+    .r-class {
+        position: relative;
+        &::after {
+            content: "  R";
+            font-size: 20px;
+            border: 3px solid #000;
+            padding: 0 5px;
+            border-radius: 5px;
+            vertical-align: middle;
+            position: absolute;
+            top: 9px;
+            margin-left: 8px;
+            right: -20%;
+        }
+    }
+}
 
+.section-2 {
+    background-color: rgb(250, 250, 250);
+    margin-top: 12px;
+    padding-top: 30px;
+    cursor: pointer;
+    .section-2-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            padding-top: 15px;
+            text-decoration: none;
+            color: rgb(29, 112, 201);
+            font-size: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .section-2-b {
+        text-align: center;
+    }
+    img {
+        width: 75%;
+    }
+    .r-class {
+        position: relative;
+        &::after {
+            content: "  S";
+            font-size: 20px;
+            border: 3px solid #000;
+            padding: 0 5px;
+            border-radius: 5px;
+            vertical-align: middle;
+            position: absolute;
+            top: 9px;
+            margin-left: 8px;
+            right: -20%;
+        }
+    }
+}
 
-
-    
-
-} 
+.section-3 {
+    background-color: rgb(250, 250, 250);
+    margin-top: 12px;
+    padding-top: 30px;
+    cursor: pointer;
+    .section-3-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            padding-top: 15px;
+            text-decoration: none;
+            color: rgb(29, 112, 201);
+            font-size: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .section-3-b {
+        text-align: center;
+    }
+    img {
+        width: 70%;
+    }
+    .series {
+        color: rgb(201, 46, 42);
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

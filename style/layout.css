@@ -1,4 +1,4 @@
-@import url(/Users/sumaerjolly/Desktop/grid-based-framework/style/reset.css);
+@import url(/Users/macbright/Desktop/grid-based-framework/style/reset.css);
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,22 +92,21 @@
 }
 
 .hd {
-  font-size: 2.5rem;
-  font-weight: bolder;
+  font-size: 2.2rem;
+  font-weight: bold;
   line-height: 1.2;
   padding: 5px;
 }
 
 .sub-hd {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.2;
   padding: 5px;
 }
 
 .small-hd {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.5rem;
   line-height: 1.2;
   padding: 5px;
 }
@@ -206,6 +205,12 @@
 .border-left {
   border-left: #808080 solid 1px;
   padding: 5px 0;
+}
+
+.border-all {
+  border: #000 solid 1px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 nav {
@@ -364,5 +369,170 @@ nav .search-box:hover > .search-btn {
 
 .small-nav button i {
   vertical-align: top;
+}
+
+.content {
+  background-color: #fafafa;
+  cursor: pointer;
+  padding-top: 30px;
+}
+
+.content .content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .content1 a {
+  padding-top: 15px;
+  text-decoration: none;
+  color: #1d70c9;
+  font-size: 20px;
+}
+
+.content .content1 a:hover {
+  text-decoration: underline;
+}
+
+.content .content2 {
+  text-align: center;
+}
+
+.content img {
+  width: 65%;
+}
+
+.content .r-class {
+  position: relative;
+}
+
+.content .r-class::after {
+  content: "  R";
+  font-size: 20px;
+  border: 3px solid #000;
+  padding: 0 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+  position: absolute;
+  top: 9px;
+  margin-left: 8px;
+  right: -20%;
+}
+
+.section-2 {
+  background-color: #fafafa;
+  margin-top: 12px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.section-2 .section-2-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-2 .section-2-a a {
+  padding-top: 15px;
+  text-decoration: none;
+  color: #1d70c9;
+  font-size: 20px;
+}
+
+.section-2 .section-2-a a:hover {
+  text-decoration: underline;
+}
+
+.section-2 .section-2-b {
+  text-align: center;
+}
+
+.section-2 img {
+  width: 75%;
+}
+
+.section-2 .r-class {
+  position: relative;
+}
+
+.section-2 .r-class::after {
+  content: "  S";
+  font-size: 20px;
+  border: 3px solid #000;
+  padding: 0 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+  position: absolute;
+  top: 9px;
+  margin-left: 8px;
+  right: -20%;
+}
+
+.section-3 {
+  background-color: #fafafa;
+  margin-top: 12px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.section-3 .section-3-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-3 .section-3-a a {
+  padding-top: 15px;
+  text-decoration: none;
+  color: #1d70c9;
+  font-size: 20px;
+}
+
+.section-3 .section-3-a a:hover {
+  text-decoration: underline;
+}
+
+.section-3 .section-3-b {
+  text-align: center;
+}
+
+.section-3 img {
+  width: 70%;
+}
+
+.section-3 .series {
+  color: #c92e2a;
+  font-size: 18px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=layout.css.map */
