@@ -1,0 +1,262 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.col-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 8.16667%;
+          flex: 0 0 8.16667%;
+}
+
+.col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.33333%;
+          flex: 0 0 16.33333%;
+}
+
+.col-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24.5%;
+          flex: 0 0 24.5%;
+}
+
+.col-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32.66667%;
+          flex: 0 0 32.66667%;
+}
+
+.col-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40.83333%;
+          flex: 0 0 40.83333%;
+}
+
+.col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
+}
+
+.col-7 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 57.16667%;
+          flex: 0 0 57.16667%;
+}
+
+.col-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65.33333%;
+          flex: 0 0 65.33333%;
+}
+
+.col-9 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 73.5%;
+          flex: 0 0 73.5%;
+}
+
+.col-10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 81.66667%;
+          flex: 0 0 81.66667%;
+}
+
+.col-11 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 89.83333%;
+          flex: 0 0 89.83333%;
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 98%;
+          flex: 0 0 98%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hd {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.sub-hd {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.small-hd {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.btn-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#49708f), to(#293f50));
+  background: linear-gradient(#49708f, #293f50);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 16px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.img-res {
+  max-width: 100%;
+  height: auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.con-large {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.con-small {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.con-medium {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
+.gray-1 {
+  color: #696969;
+}
+
+.gray-2 {
+  color: #808080;
+}
+
+.gray-3 {
+  color: #A9A9A9;
+}
+
+.gray-4 {
+  color: #C0C0C0;
+}
+
+.gray-5 {
+  color: #DCDCDC;
+}
+
+.border-btm {
+  border-bottom: #272727 solid 1px;
+  padding: 5px 0;
+}
+
+.border-top {
+  border-top: #808080 solid 1px;
+  padding: 5px 0;
+}
+
+.border-right {
+  border-right: 1px solid #d6d6d6;
+}
+
+.border-left {
+  border-left: #808080 solid 1px;
+  padding: 5px 0;
+}
+
+.border-all {
+  border: #000 solid 1px;
+  padding: 5px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=layout.css.map */
