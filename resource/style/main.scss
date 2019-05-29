@@ -1,0 +1,520 @@
+// Our site clone Scss starts here
+$nav-col: #303031;
+nav {
+    background-color: $nav-col;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    li {
+        display: inline-block;
+        width: 9%;
+        color: white;
+        list-style: none;
+        padding-top: 10px;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .buy {
+        width: 11%;
+    }
+    .search-box {
+        position: absolute;
+        transform: translate(-10%, -10%);
+        background-color: $nav-col;
+        height: 30px;
+        padding-top: 14px;
+    }
+    .search-btn {
+        color: white;
+        float: right;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .search-txt {
+        border: none;
+        background-color: none;
+        float: left;
+        outline: none;
+        padding: 0;
+        color: $nav-col;
+        font-size: 16px;
+        transition: 0.5s;
+        line-height: 30px;
+        width: 0;
+    }
+    .search-box:hover>.search-txt {
+        width: 150px;
+        padding: 0 6px;
+    }
+    .search-box:hover>.search-btn {
+        background-color: white;
+        float: right;
+        display: none;
+    }
+}
+
+.small-nav {
+    display: flex;
+    width: 100%;
+    background-color: $nav-col;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .small-nav-2 {
+        display: flex;
+        width: 100%;
+    }
+    .small-logo {
+        position: absolute;
+        left: 50%;
+    }
+    ul {
+        list-style: none;
+    }
+    .nav-content {
+        position: absolute;
+        top: 32px;
+        overflow: hidden;
+        background-color: black;
+        height: 0;
+    }
+    .nav-sub {
+        padding: 20px;
+        ul li a {
+            display: inline-block;
+            padding: 10px 0;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        li {
+            margin: 0 40px;
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+    .nav-item {
+        &:focus~.nav-content {
+            height: 100vh;
+            width: 100%;
+        }
+        padding-left: 20px;
+    }
+    .search-txt-2 {
+        width: 95%;
+        background-color: $nav-col;
+        color: white;
+        height: 35px;
+        border: none;
+    }
+    button i {
+        vertical-align: top;
+    }
+}
+
+.content {
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+    padding-top: 30px;
+    .content1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            padding-top: 15px;
+            text-decoration: none;
+            color: rgb(29, 112, 201);
+            font-size: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .content2 {
+        text-align: center;
+    }
+    img {
+        width: 65%;
+    }
+    .r-class {
+        position: relative;
+        &::after {
+            content: "  R";
+            font-size: 20px;
+            border: 3px solid #000;
+            padding: 0 5px;
+            border-radius: 5px;
+            vertical-align: middle;
+            position: absolute;
+            top: 6px;
+            margin-left: 8px;
+            right: -25%;
+        }
+    }
+}
+
+.section-2 {
+    background-color: rgb(250, 250, 250);
+    margin-top: 12px;
+    padding-top: 30px;
+    cursor: pointer;
+    .section-2-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            padding-top: 15px;
+            text-decoration: none;
+            color: rgb(29, 112, 201);
+            font-size: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .section-2-b {
+        text-align: center;
+    }
+    img {
+        width: 75%;
+    }
+    .r-class {
+        position: relative;
+        &::after {
+            content: "  S";
+            font-size: 20px;
+            border: 3px solid #000;
+            padding: 0 5px;
+            border-radius: 5px;
+            vertical-align: middle;
+            position: absolute;
+            top: 6px;
+            margin-left: 8px;
+            right: -25%;
+        }
+    }
+}
+
+.section-3 {
+    background-color: rgb(250, 250, 250);
+    margin-top: 12px;
+    padding-top: 30px;
+    cursor: pointer;
+    .section-3-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        a {
+            padding-top: 15px;
+            text-decoration: none;
+            color: rgb(29, 112, 201);
+            font-size: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .section-3-b {
+        text-align: center;
+    }
+    img {
+        width: 70%;
+    }
+    .series {
+        color: rgb(201, 46, 42);
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+// Section 4 starts here
+.wwdc {
+    background: url(../images/applemonkey.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    margin: 15px 0;
+    a {
+        text-decoration: none;
+        color: white;
+        padding-top: 15px;
+        display: block;
+    }
+}
+
+.music {
+    background: url(../images/applemusic2x.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    margin: 15px 0;
+    a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+}
+
+.tv {
+    background: url(../images/appletv.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+}
+
+.arcade {
+    background: url(../images/applearcade.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: bottom;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+}
+
+.ipad {
+    background: rgb(250, 250, 250);
+    height: 500px;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    overflow: hidden;
+    a {
+        text-decoration: none;
+        color: rgb(29, 112, 201);
+        display: inline-block;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+    img {
+        width: 60%;
+        padding-top: 40px;
+    }
+}
+
+.macbook {
+    background: rgb(250, 250, 250);
+    height: 500px;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    overflow: hidden;
+    a {
+        text-decoration: none;
+        color: rgb(29, 112, 201);
+        display: inline-block;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+    img {
+        width: 80%;
+        padding-top: 90px;
+    }
+}
+
+footer {
+    background-color: rgb(250, 250, 250);
+    margin-top: 20px;
+    .footer-links {
+        border-bottom: 1px solid rgb(214, 214, 214);
+        padding-bottom: 8px;
+    }
+    .pb {
+        margin-bottom: 25px;
+    }
+    .ls {
+        color: rgb(144, 144, 144);
+        font-size: 13px;
+        font-weight: normal;
+    }
+    .footer1 {
+        border-bottom: 1px solid rgb(214, 214, 214);
+        padding: 10px 10px 20px 0;
+        p {
+            color: rgb(144, 144, 144);
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: rgb(87, 87, 87);
+        padding-top: 15px;
+        font-size: 13px;
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    p {
+        padding-top: 25px;
+        color: rgb(51, 51, 51);
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .last-footer {
+        display: flex;
+        margin-top: 15px;
+        a {
+            color: rgb(87, 87, 87);
+            text-decoration: none;
+            padding: 15px;
+        }
+        span {
+            color: rgb(87, 87, 87);
+            padding: 15px;
+        }
+    }
+}
+
+.small-nav {
+    display: none;
+}
+
+// Media queries are here
+@media screen and (max-width: 1040px) {
+    nav li a {
+        font-size: 14px;
+    }
+    .nav-large {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        display: none;
+    }
+    .small-nav {
+        display: flex;
+        position: sticky;
+        top: 0;
+    }
+    .first-row {
+        display: block;
+        width: 95%
+    }
+    .second-row {
+        display: block;
+        width: 95%
+    }
+    .third-row {
+        display: block;
+        width: 95%
+    }
+    .ipad {
+        margin-bottom: 15px;
+    }
+    .footer-links {
+        width: 90%;
+        a {
+            font-size: 12px;
+        }
+    }
+    footer {
+        background-color: rgb(240, 240, 240);
+    }
+    .pb {
+        display: block;
+        a {
+            display: none;
+        }
+        p {
+            display: block;
+            border-bottom: solid 1px rgb(214, 214, 214);
+            padding: 10px 0;
+            cursor: pointer;
+            color: rgb(60, 60, 60);
+            font-weight: normal;
+        }
+    }
+    .last-footer {
+        width: 90%;
+        a {
+            font-size: 12px;
+        }
+    }
+    .hd {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.3;
+    }
+    .sub-hd {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+    .small-hd {
+        font-size: 1.1rem;
+    }
+    .section-2 .r-class {
+        position: relative;
+        &::after {
+            content: "  S";
+            font-size: 15px;
+            border: 3px solid #000;
+            padding: 0 5px;
+            border-radius: 5px;
+            vertical-align: middle;
+            position: absolute;
+            top: 6px;
+            margin-left: 8px;
+            right: -25%;
+        }
+    }
+    .content .r-class {
+        position: relative;
+        &::after {
+            content: "  R";
+            font-size: 15px;
+            border: 3px solid #000;
+            padding: 0 5px;
+            border-radius: 5px;
+            vertical-align: middle;
+            position: absolute;
+            top: 6px;
+            margin-left: 8px;
+            right: -25%;
+        }
+    }
+}
