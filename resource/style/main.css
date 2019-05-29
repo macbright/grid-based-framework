@@ -554,6 +554,23 @@ footer .last-footer span {
   .footer-links a {
     font-size: 12px;
   }
+  footer {
+    background-color: #f0f0f0;
+  }
+  .pb {
+    display: block;
+  }
+  .pb a {
+    display: none;
+  }
+  .pb p {
+    display: block;
+    border-bottom: solid 1px #d6d6d6;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #3c3c3c;
+    font-weight: normal;
+  }
   .last-footer {
     width: 90%;
   }
